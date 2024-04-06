@@ -18,3 +18,4 @@ public class PowerOf {
         scanner.close();
     }
 }
+

@@ -1,8 +1,15 @@
 import java.util.Scanner;
 public class ReverseOrder {
+    /**
+     * Reverses the elements of an array recursively.
+     * @param arr The array to be reversed.
+     * @param start The starting index of the array.
+     * @param end The ending index of the array.
+     */
     public static void reverse(int[] arr , int start , int end){
         if (start >= end)
             return;
+        // swap elements
         int temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;

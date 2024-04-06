@@ -1,5 +1,11 @@
 import java.util.Scanner;
 public class GCD {
+    /**
+     * Recursive method to find the greatest common divisor (GCD) of two integers.
+     * @param a The first integer.
+     * @param b The second integer.
+     * @return The GCD of the two integers.
+     */
     public static int gcd(int a , int b){
         if (b == 0){
             return a;
@@ -17,8 +23,4 @@ public static void main(String[] args){
         scanner.close();
 }
 }
-/**
- * This method find the GCD of two numbers.
- * If b is 0 , it will return a
- * then calculate gcd
- */
+

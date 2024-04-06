@@ -1,5 +1,11 @@
 import  java.util.Scanner;
 public class PowerOf {
+    /**
+     * Recursive method to calculate the power of an integer.
+     * @param a The base integer.
+     * @param n The exponent integer.
+     * @return The result of raising 'a' to the power of 'n'.
+     */
     public static int power(int  a , int n){
         if (n == 0)
             return 1;

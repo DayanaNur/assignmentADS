@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * Finds the minimum element in an array recursively.
+     * @param arr The array of integers.
+     * @param n   The number of elements in the array.
+     * @return The minimum element in the array.
+     */
      public static int findMinimum(int[] arr, int n) {
             if (n == 1)
                 return arr[0];
@@ -25,9 +31,3 @@ public class Main {
             scanner.close();
         }
     }
-    /**
- *  The 'Main' class contains two methods: 'findMinimum' and 'main'.
- *  The 'findMinimum' method is a recursive function that finds the minimum element in an array. It takes an array 'arr' and the number of elements 'n' as parameters.
- *  The 'main' method is the entry point of the program. It prompts the user to enter
- *  the number of elements in the array and then enters the elements one by one.
- */

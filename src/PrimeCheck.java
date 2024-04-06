@@ -1,5 +1,10 @@
 import java.util.Scanner;
 public class PrimeCheck {
+    /**
+     * Checks whether a given number is prime.
+     * @param n The number to check for primality.
+     * @return true if the number is prime, false otherwise.
+     */
     public static boolean isPrime(int n){
         if( n < 2){
             return false;
@@ -24,7 +29,3 @@ public class PrimeCheck {
         scanner.close();
     }
 }
-/**
- * This method checks a given number n is prime or composite.
- * The method check for divisibility by numbers from 2 to sqrt(n). If divisible , it's not prime.
- */

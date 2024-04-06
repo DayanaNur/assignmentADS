@@ -1,6 +1,10 @@
-import java.awt.*;
 import java.util.Scanner;
 public class Fibonacci {
+    /**
+     * Recursive method to find the nth Fibonacci number.
+     * @param n The position of the Fibonacci number to find.
+     * @return The nth Fibonacci number.
+     */
     public static int fibonacci(int n){
         if(n == 0)
             return 0;
@@ -18,8 +22,3 @@ public class Fibonacci {
         scanner.close();
     }
 }
-/**
- * this method find fibonacci sequence
- * F0 = 0 , F1 = 1
- * recursive call to find Fn-1 and Fn-2
- */

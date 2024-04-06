@@ -1,5 +1,11 @@
 import java.util.Scanner;
 public class Average {
+    /**
+     * Calculates the average of elements in an array.
+     * @param arr The array of integers.
+     * @param n   The number of elements in the array.
+     * @return The average of elements in the array.
+     */
     public static double calculateAverage(int[] arr, int n) {
         if (n == 0) {
             return 0;
@@ -30,10 +36,3 @@ public class Average {
     }
 
 }
-/**
- * This method calculate average of elements in array by firs checking if the array is empty.
- * if array is not empty , calculate the sum of elements using 'sumOfElements'.
- * the 'sumOfElements' method is recursive function that calculate the sum of elements in array. It firs check if is only one element in the array, if there is it returns the elements
- * The 'main' method is the entry point of the program. It prompts the user to enter the
- *  number of elements in the array and then enters the elements one by one
- */

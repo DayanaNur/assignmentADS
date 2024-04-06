@@ -1,5 +1,11 @@
 import java.util.Scanner;
 public class Factorial {
+    /**
+     * Recursive method to calculate the factorial of a number.
+     * @param n The number to calculate factorial for.
+     * @return The factorial of the given number.
+     */
+
     public static int factorial(int n){
         if (n == 0 || n == 1){
             return 1;
@@ -15,8 +21,3 @@ public class Factorial {
         scanner.close();
     }
 }
-/**
- * This method find factorial of n.
- * Factorial of n and 1 equal to 1.
- * Recursive call to calculate factorial of (n-1)
- */

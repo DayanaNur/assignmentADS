@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class Main {
+
+
     /**
      * Finds the minimum element in an array recursively.
      * @param arr The array of integers.
@@ -24,9 +26,14 @@ public class Main {
             for (int i = 0; i < n; i++) {
                 array[i] = scanner.nextInt();
             }
-
+            long startTime = System.nanoTime();
             int min = findMinimum(array, n);
-            System.out.println(min);
+            double elapsedTime = (double) (System.nanoTime() - startTime) / 1000000000;
+
+            System.out.println(
+                    "\nruntime: " + elapsedTime +
+                    "\ntime complexity: O(n)");
+
 
             scanner.close();
         }

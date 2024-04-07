@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class CheckDigit {
     /**
+     * Time complexity 1(n) where n is the elements
      * Checks if all characters in the string are digits recursively.
      * @param s The string to check.
      * @param index The index of the current character being checked.
@@ -16,6 +17,7 @@ public class CheckDigit {
         // check the next character
         return checkDigit(s , index + 1);
     }
+
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println();
@@ -26,7 +28,15 @@ public class CheckDigit {
         } else {
             System.out.println("No");
         }
+
         scanner.close();
+        long startTime = System.nanoTime();
+        boolean CheckDigit = checkDigit(s , 0);
+        double elapsedTime = (double) (System.nanoTime() - startTime) / 1000000000;
+
+
+        System.out.println("Runtime: " + elapsedTime + " seconds" +
+                "\nTime complexity: O(n)");
 
     }
 

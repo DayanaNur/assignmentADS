@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class GCD {
     /**
+     * Time complexity 6(n) where a the first int , b the second int
      * Recursive method to find the greatest common divisor (GCD) of two integers.
      * @param a The first integer.
      * @param b The second integer.
@@ -21,6 +22,11 @@ public static void main(String[] args){
         int result = gcd(a , b);
         System.out.println(result);
         scanner.close();
+    long startTime = System.nanoTime();
+    int GCD = gcd(a , b);
+    double elapsedTime = (double) (System.nanoTime() - startTime) / 1000000000;
+    System.out.println("Runtime: " + elapsedTime + " seconds" +
+            "\nTime complexity: O(n)");
 }
 }
 

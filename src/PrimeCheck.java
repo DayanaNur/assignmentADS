@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class PrimeCheck {
     /**
+     * Time complexity 6(n) where n is the number that check
      * Checks whether a given number is prime.
      * @param n The number to check for primality.
      * @return true if the number is prime, false otherwise.
@@ -26,6 +27,13 @@ public class PrimeCheck {
         } else {
             System.out.println("Composite");
         }
+        long startTime = System.nanoTime();
+        boolean PrimeCheck = isPrime(n);
+        double elapsedTime = (double) (System.nanoTime() - startTime) / 1000000000;
+
+        System.out.println(
+                "\nruntime: " + elapsedTime +
+                        "\ntime complexity: O(n)");
         scanner.close();
     }
 }

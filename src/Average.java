@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Average {
     /**
+     * Time complexity 1(n) where n is the number of elements in array
      * Calculates the average of elements in an array.
      * @param arr The array of integers.
      * @param n   The number of elements in the array.
@@ -30,8 +31,15 @@ public class Average {
         for (int i = 0; i < n; i++) {
             array[i] = scanner.nextInt();
         }
-        double average = calculateAverage(array, n);
-        System.out.println(average);
+
+        long startTime = System.nanoTime();
+        double average = sumOfElements(array, n);
+        double elapsedTime = (double) (System.nanoTime() - startTime) / 1000000000;
+
+        System.out.println(
+                "\nruntime: " + elapsedTime +
+                "\ntime complexity: O(n)");
+
         scanner.close();
     }
 
